@@ -1,6 +1,6 @@
 using System;
 using System.Threading.Tasks;
-using EstateApp.Data.DatabaseContexts.ApplicationDbContext;
+// using EstateApp.Data.DatabaseContexts.ApplicationDbContext;
 using EstateApp.Data.DatabaseContexts.AuthenticationDbContext;
 using EstateApp.Data.Entities;
 using Microsoft.AspNetCore.Builder;
@@ -24,14 +24,11 @@ namespace EstateApp.Web
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
-        {
+       {
            services.AddDbContextPool<AuthenticationDbContext>(
-                options => options.UseSqlServer(Configuration.GetConnectionString("AuthenticationConnection"),
-
-                sqlServerOptions => {
-                    sqlServerOptions.MigrationsAssembly("EstateApp.Data");
-                }
-        }
+               options => options.UseSqlServer(Configuration.GetConnectionString("AuthenticationConnection")));
+            services.AddControllersWithViews();
+       }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
