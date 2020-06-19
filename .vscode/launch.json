@@ -10,14 +10,24 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
+<<<<<<< HEAD
             "program": "${workspaceFolder}/src/EstateApp.Web/bin/Debug/netcoreapp3.1/EstateApp.Web.dll",
             "args": [],
             "cwd": "${workspaceFolder}/src/EstateApp.Web",
+=======
+            "program": "${workspaceFolder}/src/EstateApp/bin/Debug/netcoreapp3.1/EstateApp.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/src/EstateApp",
+>>>>>>> master
             "stopAtEntry": false,
             // Enable launching a web browser when ASP.NET Core starts. For more information: https://aka.ms/VSCode-CS-LaunchJson-WebBrowser
             "serverReadyAction": {
                 "action": "openExternally",
+<<<<<<< HEAD
                 "pattern": "^\\s*Now listening on:\\s+(https?://\\S+)"
+=======
+                "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
+>>>>>>> master
             },
             "env": {
                 "ASPNETCORE_ENVIRONMENT": "Development"
