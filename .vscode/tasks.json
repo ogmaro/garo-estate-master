@@ -7,7 +7,11 @@
             "type": "process",
             "args": [
                 "build",
+<<<<<<< HEAD
+                "${workspaceFolder}/src/EstateApp.Web/EstateApp.Web.csproj",
+=======
                 "${workspaceFolder}/src/EstateApp/EstateApp.csproj",
+>>>>>>> master
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -19,7 +23,11 @@
             "type": "process",
             "args": [
                 "publish",
+<<<<<<< HEAD
+                "${workspaceFolder}/src/EstateApp.Web/EstateApp.Web.csproj",
+=======
                 "${workspaceFolder}/src/EstateApp/EstateApp.csproj",
+>>>>>>> master
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -32,7 +40,11 @@
             "args": [
                 "watch",
                 "run",
+<<<<<<< HEAD
+                "${workspaceFolder}/src/EstateApp.Web/EstateApp.Web.csproj",
+=======
                 "${workspaceFolder}/src/EstateApp/EstateApp.csproj",
+>>>>>>> master
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
