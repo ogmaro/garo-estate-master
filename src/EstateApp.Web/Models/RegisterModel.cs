@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace EstateApp.Web.Models
 {
-    public class RegisterModel
+    public class RegisterModel 
     {
         [DisplayName("Name")]
         [Required]
